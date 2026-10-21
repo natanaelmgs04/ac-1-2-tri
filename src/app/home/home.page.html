@@ -1,0 +1,59 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Agricola
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <p>Temperatura média de 4 meses atrás</p>
+  <ion-range min="0" 
+  max="40" 
+  step="1" 
+  [(ngModel)]="temperatura4"
+  aria-label="Temperature"
+  aria-label="Custom range" 
+  [value]="50" 
+  [pin]="true">
+ <ion-icon slot="start" name="snow-outline"></ion-icon>
+  <ion-icon slot="end" name="sunny-outline"></ion-icon></ion-range>
+
+  <p>Temperatura média de 3 meses atrás em ºC</p>
+  <ion-range min="0" 
+  max="40" 
+  step="1" 
+  [(ngModel)]="temperatura3"
+  aria-label="Temperature"
+  aria-label="Custom range" 
+  [value]="50" 
+  [pin]="true">
+ <ion-icon slot="start" name="snow-outline"></ion-icon>
+  <ion-icon slot="end" name="sunny-outline"></ion-icon></ion-range>
+
+  <p>Temperatura média de 2 meses atrás em ºC</p>
+  <ion-range min="0" 
+  max="40" 
+  step="1" 
+  [(ngModel)]="temperatura2"
+  aria-label="Temperature"
+  aria-label="Custom range" 
+  [value]="50" 
+  [pin]="true">
+ <ion-icon slot="start" name="snow-outline"></ion-icon>
+  <ion-icon slot="end" name="sunny-outline"></ion-icon></ion-range>
+
+  <p>Temperatura média de 1 mês atrás em ºC</p>
+  <ion-range min="0" 
+  max="40" 
+  step="1" 
+  [(ngModel)]="temperatura1"
+  aria-label="Temperature"
+  aria-label="Custom range" 
+  [value]="50" 
+  [pin]="true">
+ <ion-icon slot="start" name="snow-outline"></ion-icon>
+  <ion-icon slot="end" name="sunny-outline"></ion-icon></ion-range>
+
+  <ion-button expand="block" (click)="abrirTela()">Sugerir</ion-button>
+</ion-content>

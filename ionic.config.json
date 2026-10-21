@@ -1,0 +1,7 @@
+{
+  "name": "Ac1 2tri",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
